@@ -11,6 +11,9 @@
 * [最新版で学ぶElectron入門](https://ics.media/entry/7298)
 * [Electronの導入手順(Windows＆macOS共通の手順)](https://www.youtube.com/watch?v=fl1zQ82m0kc&feature=youtu.be)
 
+
+![dir](https://github.com/flow-dev/electron_app_test/blob/master/electron_dir.png)
+
 ## Usage
 
 ```
@@ -117,6 +120,12 @@ npm i -D electron-packager
 #WindowsOS用の実行ファイルを生成する
 npx electron-packager src FirstApp --platform=win32 --arch=x64 --overwrite
 ```
+
+* 上記で,electronでApp開発する最低限の環境構築ができる.
+* **node_modules**は,electronやelectron-packagerなど実行ファイルが全部入ってるので大きい.
+* ./srcとpackage.json,package-lock.jsonにnpmパッケージの依存関係が書いてあるので, **npm install**で取り込める.
+* だからこのリポジトリを**git clone**して,**npm install**すれば,同じ環境が作れる.
+* 1から環境構築する方法と,package.jsonから環境構築する方法,2つの方法があることを知っておくこと.
 
 ## Dependencies
 
