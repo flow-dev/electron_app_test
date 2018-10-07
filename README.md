@@ -119,6 +119,9 @@ npm i -D electron-packager
 
 #WindowsOS用の実行ファイルを生成する
 npx electron-packager src FirstApp --platform=win32 --arch=x64 --overwrite
+
+electron_app_test-win32-x64というディレクトリが出来て,.exeができる.
+
 ```
 
 * 上記で,electronでApp開発する最低限の環境構築ができる.
