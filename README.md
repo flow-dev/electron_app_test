@@ -5,12 +5,13 @@
 ## Installation
 
 * Node.jsをインストールする.
+* [Node.js](https://nodejs.org/ja/)
 
 ## Documentation
 
 * [最新版で学ぶElectron入門](https://ics.media/entry/7298)
 * [Electronの導入手順(Windows＆macOS共通の手順)](https://www.youtube.com/watch?v=fl1zQ82m0kc&feature=youtu.be)
-
+* [ちゃんと使い分けてる? dependenciesいろいろ。](https://qiita.com/cognitom/items/acc3ffcbca4c56cf2b95)
 
 ![dir](https://github.com/flow-dev/electron_app_test/blob/master/electron_dir.png)
 
@@ -24,15 +25,15 @@ cd electron_app_test
 #package.jsonを生成
 npm init -y
 
-#electronをinstall
-npm install -D electron
+#electronをinstall(リリースパッケージに含まないので,devDependenciesとして管理する)
+npm install --save-dev electron
 
 #Codeをおくディレクトリを生成する
 mkdir src
 cd src
 
 #package.jsonを生成して,
-#エントリーポイントとなるJavaScriptのファイル名を指定する
+#エントリーポイントとなるJavaScriptのファイル名を指定する.(指定が間違っていると起動しない)
 New-Item package.json
 
 #################->ここから
